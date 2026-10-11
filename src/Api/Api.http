@@ -1,0 +1,43 @@
+@CatalogService_HostAddress = http://localhost:5002
+
+POST {{CatalogService_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  "title": "O Senhor dos Aneis: A Sociedade do Anel",
+  "authors": [
+    "J.R.R. Tolkien"
+  ],
+  "publisher": "HARLEQUIN",
+  "publishedDate": "2019-11-25",
+  "description": "A Sociedade do Anel",
+  "industryIdentifiers": [
+    {
+      "type": "ISBN_10",
+      "identifier": "8595086338"
+    },
+    {
+      "type": "ISBN_13",
+      "identifier": "9788595086333"
+    }
+  ],
+  "pageCount": 576,
+  "printedPageCount": 582,
+  "printType": "BOOK",
+  "categories": [
+    "Fiction / Fantasy / General",
+    "Fiction / General"
+  ],
+  "maturityRating": "NOT_MATURE",
+  "allowAnonLogging": true,
+  "contentVersion": "1.15.16.0.preview.2",
+  "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+  },
+  "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/publisher/content?id=R7KuDwAAQBAJ",
+    "thumbnail": "http://books.google.com/books/publisher/content?id=R7KuDwAAQBAJ"
+  },
+  "language": "pt-BR"
+}
